@@ -1,0 +1,68 @@
+body {
+    font-family: Ubuntu, sans-serif;
+    background-color: whitesmoke;
+    color: #222222;
+}
+
+header{
+    font-family: Cinzel, serif;
+    background-color: #222;
+    color: whitesmoke;
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+#course-title{
+    display: block;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: whitesmoke;
+    gap: 2rem;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: lightgreen;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.card img {
+    max-width: 50%;
+    float: right;
+}
+
+footer{
+    font-family: Cinzel, serif;
+    background-color: #222;
+    color: whitesmoke;
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
