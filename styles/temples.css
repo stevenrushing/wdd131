@@ -59,6 +59,12 @@ main h1 {
     margin-bottom: .5rem;
 }
 
+main h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
 figure {
     margin: 1rem 0;
     text-align: center;
