@@ -1,0 +1,45 @@
+@media (min-width: 640px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    #hero {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    #hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #data {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: rgba(245, 245, 245, 0.85);
+        z-index: 1;
+        align-self: start;
+        margin: 1rem;
+    }
+
+    #weather {
+        grid-column: 3;
+        grid-row: 1;
+        background-color: rgba(245, 245, 245, 0.85);
+        z-index: 1;
+        align-self: end;
+        margin: 1rem;
+    }
+
+    /* Hide SVG icon in wider view, pseudo-element handles it */
+    #weather img {
+        display: none;
+    }
+
+    #weather h2::after {
+        content: " ⛅";
+    }
+}
