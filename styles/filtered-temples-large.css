@@ -1,0 +1,21 @@
+@media (min-width: 500px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    nav ul,
+    nav ul.show {
+    display: flex;
+    flex-direction: row;
+}
+}
