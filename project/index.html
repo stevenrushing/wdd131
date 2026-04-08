@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Steven Rushing">
+    <meta name="description" content="An inspirational quote and scripture page created by Steven Rushing for the BYU Idaho class WDD 131 - Dynamic Web Fundamentals, HTML, CSS, JavaScript, webpage, coding, temple, album">
+    <title>Flipnliken</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/quotes.css" />
+    <script src="scripts/quotes.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>flipnliken</h2>
+        <button id="hamburger">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">flipnliken</a></li>
+                <li><a href="quotenliken.html">quotnliken</a></li>
+                <li><a href="linknliken.html">linknliken</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- big box for the verse -->
+            <div id="scriptureVerse" class="verse">Might take ~5 seconds on first run...</div>
+
+            <!-- flipnliken! -->
+            <button id="flipnlikenButton">flipnliken</button>
+
+            <!-- the books, ought to add more at some point, koran, bhagavadgita, apocrypha, etc -->
+            <div id="volumeToggles" class="toggle-container">
+                <label><input type="checkbox" data-volume="Old Testament" checked> Old Testament</label>
+                <label><input type="checkbox" data-volume="New Testament" checked> New Testament</label>
+                <label><input type="checkbox" data-volume="Book of Mormon"> Book of Mormon</label>
+                <label><input type="checkbox" data-volume="Doctrine and Covenants"> Doctrine & Covenants</label>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="siteplan.html">siteplan</a>
+        <a href="references.html">references</a>
+    </footer>
+</body>
+</html>

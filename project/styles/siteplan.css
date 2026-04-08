@@ -1,0 +1,89 @@
+body {
+    font-family: Ubuntu, sans-serif;
+    background-color: whitesmoke;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #222222;
+    color: whitesmoke;
+    padding: 1rem 2rem;
+}
+
+.header-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a, footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main {
+    max-width: 680px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+#hamburger {
+    display: none;
+}
+
+@media (max-width: 680px) {
+    main {
+        margin: 1rem 0;
+    }
+    #hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 680px;
+    margin: 0 auto;
+}
