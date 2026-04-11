@@ -1,0 +1,107 @@
+body {
+    font-family: Ubuntu, sans-serif;
+    background-color: whitesmoke;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: Cinzel, serif;
+    background-color: #222;
+    color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+select, input[type="date"], textarea, input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.75rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    float: left;
+    width: 100%;
+}
+
+fieldset::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    margin-top: 0;
+    margin-right: 1rem;
+}
+
+
+input[type="submit"] {
+    background-color: #222;
+    color: whitesmoke;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-family: Cinzel, serif;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.optional {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: normal;
+}
+
+footer {
+    font-family: Cinzel, serif;
+    background-color: #222;
+    color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+}
