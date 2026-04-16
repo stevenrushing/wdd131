@@ -1,0 +1,119 @@
+/* Shared layout styles for flipnliken.com */
+body {
+    font-family: Ubuntu, sans-serif;
+    background-color: whitesmoke;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: #222;
+    color: whitesmoke;
+    padding: 1rem 2rem;
+}
+
+.header-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+header a,
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hamburger {
+    display: none;
+    background: none;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.2rem 0.55rem;
+    border-radius: 3px;
+    line-height: 1.4;
+}
+
+main {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.footer-row p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+/* 680 not 700 - the nav was wrapping weird at 700 and I'm out of time to make it work*/
+@media (max-width: 680px) {
+    main {
+        margin: 1rem 0;
+        padding: 0 0.75rem;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+    .nav-group {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

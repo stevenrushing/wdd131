@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="author" content="Steven Rushing">
-    <meta name="description" content="flipnliken — click a button and receive a random scripture verse from the Old Testament, New Testament, Book of Mormon, or Doctrine and Covenants.">
-    <title>flipnliken</title>
+    <meta name="description" content="linknliken — a curated list of scripture, motivational, and productivity resources.">
+    <title>linknliken | flipnliken</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/quotes.css" />
-    <script src="scripts/quotes.js" defer></script>
+    <link rel="stylesheet" href="styles/linknliken.css" />
+    <script src="scripts/linknliken.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,28 +30,24 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <div id="scriptureVerse" class="verse">Clickity</div>
-            <button id="flipnlikenButton">flipnliken!</button>
-            <div id="volumeToggles" class="toggle-container">
-                <label>
-                    <input type="checkbox" data-volume="Old Testament" checked>
-                    Old Testament
-                </label>
-                <label>
-                    <input type="checkbox" data-volume="New Testament" checked>
-                    New Testament
-                </label>
-                <label>
-                    <input type="checkbox" data-volume="Book of Mormon">
-                    Book of Mormon
-                </label>
-                <label>
-                    <input type="checkbox" data-volume="Doctrine and Covenants">
-                    Doctrine &amp; Covenants
-                </label>
+        <section class="page-intro">
+            <h1>linknliken</h1>
+            <p>A curated collection of resources for scripture study, motivation, and productivity.</p>
+        </section>
+
+        <section class="filter-section">
+            <div id="filterButtons" class="filter-buttons">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="scripture">Scripture</button>
+                <button class="filter-btn" data-filter="motivation">Motivation</button>
+                <button class="filter-btn" data-filter="productivity">Productivity</button>
+                <button class="filter-btn" data-filter="lds">LDS</button>
             </div>
-        </div>
+        </section>
+
+        <section>
+            <ul id="linksList" class="links-list"></ul>
+        </section>
     </main>
     <footer>
         <div class="footer-row">

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Steven Rushing">
+    <meta name="description" content="quotnliken — get a motivational quote personalized for what you need right now.">
+    <title>quotnliken | flipnliken</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/quotenliken.css" />
+    <script src="scripts/quotenliken.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h2><a href="index.html">flipnliken</a></h2>
+            <div class="nav-group">
+                <button id="hamburger">&#9776;</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">flipnliken</a></li>
+                        <li><a href="quotenliken.html">quotnliken</a></li>
+                        <li><a href="linknliken.html">linknliken</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="form-section">
+            <h1>quotnliken</h1>
+            <p>What do you need to hear?</p>
+            <form id="quoteForm" action="#" method="get">
+                <fieldset>
+                    <legend>Get Your Quote</legend>
+                    <div class="form-group">
+                        <label for="userName">Your Name</label>
+                        <input
+                            type="text"
+                            id="userName"
+                            name="userName"
+                            autocomplete="given-name"
+                            placeholder="Enter your name"
+                            minlength="2"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="category">What do you need?</label>
+                        <select id="category" name="category" required>
+                            <option value="">-- Choose --</option>
+                            <option value="work">Get to work</option>
+                            <option value="life">Life is rough</option>
+                            <option value="spiritual">Find the spirit</option>
+                            <option value="fun">Make me smile</option>
+                            <option value="random">Random</option>
+                        </select>
+                    </div>
+                    <button type="submit">quotnliken!</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="quoteDisplay" class="quote-display hidden">
+            <p id="quoteGreeting" class="quote-greeting"></p>
+            <blockquote id="quoteText"></blockquote>
+            <p id="quoteAuthor" class="quote-author"></p>
+            <button id="favoriteBtn" type="button">Make a Favorites</button>
+        </section>
+
+        <section class="favorites-section">
+            <h2>Favorites</h2>
+            <p id="noFavorites">No favs yet.</p>
+            <ul id="favoritesList"></ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-row">
+            <p>&copy;<span id="currentyear"></span> Steven Rushing &mdash; Italy</p>
+            <p id="lastModified"></p>
+        </div>
+        <div class="footer-row">
+            <a href="siteplan.html">siteplan</a>
+            <a href="references.html">references</a>
+        </div>
+    </footer>
+</body>
+</html>

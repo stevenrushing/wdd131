@@ -1,9 +1,9 @@
 body {
     font-family: Ubuntu, sans-serif;
-    background-color: whitesmoke;
-    color: #222222;
     margin: 0;
     padding: 0;
+    background-color: whitesmoke;
+    color: #222222;
 }
 
 header, footer {
@@ -82,8 +82,8 @@ img {
 
 .footer-row {
     display: flex;
+    max-width: 680px;
     justify-content: space-between;
     align-items: center;
-    max-width: 680px;
     margin: 0 auto;
 }
